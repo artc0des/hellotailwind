@@ -21,3 +21,12 @@
 @supports (font-variation-settings: normal) {
   :root { font-family: InterVariable, sans-serif; }
 }
+
+@font-face {
+  font-family: test;
+  src: url('../fonts/Youthful_Demo.ttf');
+}
+
+h3 {
+    font-family: test;
+}
