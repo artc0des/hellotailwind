@@ -5,13 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Bai+Jamjuree:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Alata&family=Bai+Jamjuree:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/output.css">
+    <script src="/js/nav.js" defer></script>
     <title>LoopStudios</title>
 </head>
 <body>
@@ -49,8 +45,22 @@
                         </div>
                     </div>
                 </div>
+                <!-- Ham Menu -->
+                <div class="md:hidden">
+                    <button id="menu-btn" type="button" class="z-40 block hamburger md:hidden focus:outline-none">
+                        <span class="hamburger-top"></span>
+                        <span class="hamburger-middle"></span>
+                        <span class="hamburger-bottom"></span>
+                    </button>
+                </div>
             </nav>
             <!-- Mobile Menu -->
+             <div id="menu" class="absolute top-0 bottom-0 left-0 hidden flex-col self-end w-full min-h-screen py-1 pt-40 pl-12 space-y-3 text-lg text-white uppercase bg-black">
+                <a href="#" class="hover:text-pink-500">Home</a>
+                <a href="#" class="hover:text-pink-500">About</a>
+                <a href="#" class="hover:text-pink-500">Careers</a>
+                <a href="#" class="hover:text-pink-500">Events</a>
+             </div>
             <div class="max-w-lg mt-32 mb-32 p-4 font-sans text-4xl text-white uppercase border-2 md:p-10 md:m-32 md:mx-0 md:text-6xl">
                 Impressive Experiences That Deliver
             </div>
@@ -69,5 +79,113 @@
             </div>
         </div>
     </section>
+    <!-- creations -->
+    <section id="creations">
+        <div class="container max-w-6xl mx-auto my-32 px-6 text-gray-900 md:px-0">
+            <div class="flex justify-center mb-20 md:justify-between">
+                <h2 class="text-4xl text-center uppercase md:text-left md:text-5xl">
+                    Our Creations
+                </h2>
+                <button class="btn hidden md:block">
+                    See All
+                </button>
+            </div>
+            <!-- Items container -->
+            <div class="item-container">
+                <div class="group item">
+                    <img src="done/loopstudios/images/desktop/image-deep-earth.jpg" alt="" class="hidden w-full duration-200 md:block group-hover:scale-110">
+                    <img src="done/loopstudios/images/mobile/image-deep-earth.jpg" alt="" class="w-full md:hidden">
+                    <div class="absolute top-0 bottom-0 right-0 left-0 bg-gradient-to-b from-transparent to-gray-900 group-hover:from-gray-50 group-hover:to-white group-hover:opacity-70">
+                    </div>
+                    <h5 class="absolute px-6 duration-200 w-52 bottom-4 md:bottom-8 md:px-10 group-hover:scale-110 group-hover:text-black">
+                        Deep Earth
+                    </h5>
+                </div><div class="group item">
+                    <img src="done/loopstudios/images/desktop/image-night-arcade.jpg" alt="" class="hidden w-full duration-200 md:block group-hover:scale-110">
+                    <img src="done/loopstudios/images/mobile/image-night-arcade.jpg:Zone.Identifier" alt="" class="w-full md:hidden">
+                    <div class="absolute top-0 bottom-0 right-0 left-0 bg-gradient-to-b from-transparent to-gray-900 group-hover:from-gray-50 group-hover:to-white group-hover:opacity-70">
+                    </div>
+                    <h5 class="absolute px-6 duration-200 w-52 bottom-4 md:bottom-8 md:px-10 group-hover:scale-110 group-hover:text-black">
+                        Deep Earth
+                    </h5>
+                </div><div class="group item">
+                    <img src="done/loopstudios/images/desktop/image-soccer-team.jpg" alt="" class="hidden w-full duration-200 md:block group-hover:scale-110">
+                    <img src="done/loopstudios/images/mobile/image-soccer-team.jpg" alt="" class="w-full md:hidden">
+                    <div class="absolute top-0 bottom-0 right-0 left-0 bg-gradient-to-b from-transparent to-gray-900 group-hover:from-gray-50 group-hover:to-white group-hover:opacity-70">
+                    </div>
+                    <h5 class="absolute px-6 duration-200 w-52 bottom-4 md:bottom-8 md:px-10 group-hover:scale-110 group-hover:text-black">
+                        Deep Earth
+                    </h5>
+                </div><div class="group item">
+                    <img src="done/loopstudios/images/desktop/image-grid.jpg" alt="" class="hidden w-full duration-200 md:block group-hover:scale-110">
+                    <img src="done/loopstudios/images/mobile/image-grid.jpg" alt="" class="w-full md:hidden">
+                    <div class="absolute top-0 bottom-0 right-0 left-0 bg-gradient-to-b from-transparent to-gray-900 group-hover:from-gray-50 group-hover:to-white group-hover:opacity-70">
+                    </div>
+                    <h5 class="absolute px-6 duration-200 w-52 bottom-4 md:bottom-8 md:px-10 group-hover:scale-110 group-hover:text-black">
+                        Deep Earth
+                    </h5>
+                </div>
+            </div>
+            <div class="flex justify-center mt-10 md:hidden">
+                <button class="btn w-full md:hidden">
+                    See All
+                </button>
+            </div>
+        </div>
+    </section>
+    <footer class="bg-black">
+        <div class="container max-w-6xl py-10 mx-auto">
+            <div class="flex flex-col items-center mb-8 space-y-6 md:flex-row md:flex-y-0 md:justify-between md:items-start">
+                <!-- Page links -->
+                <div class="flex flex-col items-center space-y-8 md:items-start md:space-y-4">
+                    <div class="h-8">
+                        <img src="done/loopstudios/images/logo.svg" alt="" class="w-44 md:ml-3">
+                    </div>
+                    <div class="flex flex-col items-center space-y-4 font-bold text-white md:flex-row md:space-y-0 md:space-x-6 md:ml-3">
+                        <div class="h-10 group">
+                            <a href="#">About</a>
+                            <div class="mx-2 group-hover:border-b group-hover:border-blue-50"></div>
+                        </div>
+                        <div class="h-10 group">
+                            <a href="#">Careers</a>
+                            <div class="mx-2 group-hover:border-b group-hover:border-blue-50"></div>
+                        </div>
+                        <div class="h-10 group">
+                            <a href="#">Contact Us</a>
+                            <div class="mx-2 group-hover:border-b group-hover:border-blue-50"></div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Social icons -->
+                <div class="flex flex-col items-start justify-between space-y-4 text-gray-500">
+                    <div class="flex items-center justify-center mx-auto space-x-4 md:mx-0 md:justify-end">
+                        <div class="h-8 group">
+                            <a href="#">
+                                <img src="done/loopstudios/images/icon-facebook.svg" alt="">
+                            </a>
+                        </div>
+                        <div class="h-8 group">
+                            <a href="#">
+                                <img src="done/loopstudios/images/icon-twitter.svg" alt="">
+                            </a>
+                        </div>
+                        <div class="h-8 group">
+                            <a href="#">
+                                <img src="done/loopstudios/images/icon-instagram.svg" alt="">
+                            </a>
+                        </div>
+                        <div class="h-8 group">
+                            <a href="#">
+                                <img src="done/loopstudios/images/icon-pinterest.svg" alt="">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="font-bold">
+                        &copy; 2024 LoopStudios. All Rights Reserved
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>

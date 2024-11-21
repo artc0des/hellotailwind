@@ -26,6 +26,9 @@ module.exports = {
         alata: ['Alata'],
         nothing: ['Nothing You Could Do']
       },
+      letterSpacing: {
+        widest: '0.3em'
+      }
     },
   },
   plugins: [
